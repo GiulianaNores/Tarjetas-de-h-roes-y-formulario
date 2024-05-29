@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <section class="header_inicio">
+        <div class="descuentos_inicio">
+          <p>20% de descuento en todos los productos!</p>
+        </div>
+        <div class="logo_inicio">
+          <img src="./img/logo 1.png" alt="imagen_logodeinicio" />
+          <a href="intex.html" ><span class="volver_inicio">Nombre tienda</span></a>
+        </div>
+        <nav class="opciones_inicio">
+          <div>
+            <ul>
+              <a href=""><li>Contacto</li></a>
+              <a href=""><li>Registrarme</li></a>
+              <a href=""><li>ingresar</li></a>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="fondo_pagina">
+        <div>
+          <form action="/registro.html" method="post" class="formulario">
+            <h1 class="title">Añadí tu super!</h1>
+            <p class="añaditusuper">
+              Agregá tu personaje favorito completando las opciones.
+            </p>
+            <article class="flex_formulario">
+              <div class="columnas">
+                <label for="name" class="etiqueta">*Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input_clasico"
+                />
+                <label for="date" class="etiqueta">Fecha</label>
+                <input
+                  type="date"
+                  name="date"
+                  id="name"
+                  class="input_clasico"
+                />
+                <label for="infomación" class="etiqueta">Infomación</label>
+                <textarea name="infomación" id="infomación" value="infomación">
+                </textarea>
+              </div>
+              <div class="columnas">
+                <label for="especie" class="etiqueta">*Especie</label>
+                <select name="especie" id="especie" class="input_clasico">
+                  <optgroup label="Especie">
+                    <option value="vampiro">Vampiro</option>
+                    <option value="humano">Humano</option>
+                    <option value="alien">Alien</option>
+                    <option value="demonio">Demonio</option>
+                    <option value="robot">Robot</option>
+                  </optgroup>
+                </select>
+                <label for="file" class="etiqueta">Agregar foto</label>
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  accept="image/*"
+                  class="input_file"/>
+                <label for="poderes" class="etiqueta">Poderes</label>
+                <label for="volar">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="volar"
+                    value="volar"
+                    class="input_caja"
+                  /><span class="habilidad">Volar</span>
+                </label>
+                <label for="poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="superinteligencia"
+                    value="superinteligencia"
+                    class="input_caja"/><span class="habilidad">Superinteligencia</span>
+                </label>
+                <label for="poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="rayoslaser"
+                    value="rayoslaser"
+                    class="input_caja"
+                  /><span class="habilidad">Vista de rayo láser</span>
+                </label>
+                <label for="poderes">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="billeteragorda"
+                    value="billeteragorda"
+                    class="input_caja"
+                  /><span class="habilidad">Billetera gorda</span>
+                </label>
+                  <label for="personajes" class="etiqueta"> Tipo De Personaje</label>
+                <label for="personajes">
+                  <input
+                    type="radio"
+                    name="personajes"
+                    id="heroe_heroina"
+                    value="heroe_heroina"
+                    class="input_radio"
+                  /><span class="tipo_personaje">Héroe / Heroina</span>
+                </label>
+                <label for="personajes">
+                  <input
+                    type="radio"
+                    name="personajes"
+                    id="villano_villana"
+                    value="villano_villana"
+                    class="input_radio"
+                  /> <span class="tipo_personaje">Villano / Villana</span>
+                </label>
+              </div>
+            </article>
+            <a href="#"><button class="boton_formulario"><p class="texto_boton_formulario">Añadir</p></button></a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
